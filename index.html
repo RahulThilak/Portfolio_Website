@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="nav_logo" href="#home">
+        <span>Rahul Thilak</span>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list" id="menuList">
+          <li><a class="main-nav-link" href="#home-section">Home</a></li>
+          <li>
+            <a class="main-nav-link" href="#qualifications">Qualification</a>
+          </li>
+          <li><a class="main-nav-link" href="#skills">Skills</a></li>
+          <li>
+            <a class="main-nav-link" href="#projects">Projects</a>
+          </li>
+          <li><a class="main-nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-buttons">
+        <!-- Theme toggle button-->
+        <button class="theme-toggle-btn">
+          <ion-icon class="icon icon-sun" name="sunny-outline"></ion-icon>
+          <ion-icon class="icon icon-moon" name="moon-outline"></ion-icon>
+        </button>
+        <!-- Only displayed in mobile screen -->
+        <button class="menu-btn">
+          <ion-icon
+            class="menu-icon open-menu-icon"
+            name="menu-outline"
+          ></ion-icon>
+
+          <ion-icon
+            class="menu-icon close-outline close-menu-icon"
+            name="close-outline"
+          ></ion-icon>
+        </button>
+      </div>
+      <!--  -->
+    </header>
+
+    <main class="main">
+      <button class="scroll-to-top-btn" id="scroll-btn">
+        <i class="fa-sharp fa-solid fa-angle-up scroll-icon"></i>
+        <p class="scroll-text">Scroll to Top</p>
+      </button>
+      <!--  -->
+      <section id="home-section " class="section section-home">
+        <div class="container home-container">
+          <div class="home-info">
+            <h1 class="heading-primary">Hi, I'm Rahul Thilak 👋</h1>
+            <p class="description inline-block">
+              I'm a recent Engineering graduate with a strong passion for web
+              development. I've spent extensive time honing my skills in
+              JavaScript, React, and responsive web design. Now, I’m excited to
+              kickstart my career and build efficient, user-friendly
+              applications.
+            </p>
+          </div>
+          <div class="home-img">
+            <!-- <div class="home-img-box">
+            </div> -->
+            <img src="./assets/Profile-Pic-1.jpg" alt="" class="home-img" />
+          </div>
+          <div class="home-description">
+            <h3 class="heading-tertiary">About me</h3>
+            <p class="description-paragraph">
+              Frontend Developer | AIML Grad | Open to exciting opportunities |
+              Passionate about creating impactful web experiences | Let's
+              collaborate and build something extraordinary! 🤝 🚀
+            </p>
+          </div>
+          <ul class="social-links-list">
+            <li>
+              <a
+                class="social-links"
+                href="./assets/Rahul_Thilak_Resume1.pdf"
+                download="Rahul_Thilak_Resume1.pdf"
+                >Download Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--  -->
+      <section id="qualifications" class="section section-qualifications">
+        <h2 class="center-heading">Qualifications</h2>
+        <div class="container qualification-container">
+          <h3 class="center-heading">Educational Background</h3>
+          <div class="flexbox-vertical">
+            <div class="row1 grid-horizontal text-md">
+              <div class="degree text-white-subtle text-md">
+                <h4>Mumbai University</h4>
+                <p>
+                  Bachelor's in Artificial Intelligence and Machine Learning
+                  Engineering (BE)
+                </p>
+              </div>
+              <div class="clg-stats text-md">
+                <p>Universal College of Engineering</p>
+                <p>2021-2024</p>
+                <p>CGPI: 8.51/10.00</p>
+              </div>
+            </div>
+            <div class="row1 grid-horizontal text-md">
+              <div class="degree text-white-subtle text-md">
+                <div>
+                  <h4>MSBTE</h4>
+                  <p>Diploma in Computer Engineering</p>
+                </div>
+              </div>
+              <div class="clg-stats text-md">
+                <p>Viva College</p>
+                <p>2018-2021</p>
+                <p>Percentage: 92.63%</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-experience flexbox-vertical">
+            <h3 class="center-heading">Work Experience</h3>
+            <p class="text-white-subtle">No prior work experience</p>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="skills" class="section section-skills">
+        <h2 class="center-heading">Skills</h2>
+        <div class="container skills-container">
+          <h3>Frontend Development</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fab fa-html5 skill-icon" style="color: #e34c26"></i>
+
+              <p>HTML</p>
+            </div>
+
+            <div class="skill-item">
+              <i class="fab fa-css3-alt skill-icon" style="color: #264de4"></i>
+
+              <p>CSS</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js skill-icon" style="color: #f7df1e"></i>
+
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react skill-icon" style="color: #61dafb"></i>
+              <p>React js</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-bootstrap skill-icon" style="color: #7952b3"></i>
+              <p>Bootstrap</p>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-wind skill-icon"></i>
+
+              <p>Tailwind</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="projects" class="section section-projects">
+        <h2 class="center-heading">Projects</h2>
+
+        <div class="container projects-container">
+          <div class="project-item">
+            <img
+              src="./assets/Omnifood.jpg"
+              alt="Omnifood Website"
+              class="prj-img"
+              loading="lazy"
+            />
+            <h4>Omnifood Website</h4>
+            <div class="btns-container">
+              <button class="prj-btn">Github</button>
+              <button class="prj-btn">Live Demo</button>
+            </div>
+          </div>
+          <div class="project-item">
+            <img
+              src="./assets/usePopcorn.jpg"
+              alt="Use Popcorn Prj"
+              class="prj-img"
+              loading="lazy"
+            />
+            <h4>Use Popcorn</h4>
+            <div class="btns-container">
+              <button class="prj-btn">Github</button>
+              <button class="prj-btn">Live Demo</button>
+            </div>
+          </div>
+          <div class="project-item">
+            <img
+              src="./assets/React-Quiz-App.jpg"
+              alt="React-Quiz"
+              class="prj-img"
+              loading="lazy"
+            />
+            <h4>React-Quiz App</h4>
+            <div class="btns-container">
+              <button class="prj-btn">Github</button>
+              <button class="prj-btn">Live Demo</button>
+            </div>
+          </div>
+          <div class="project-item">
+            <img
+              src="./assets/Atomic-vlog.jpg"
+              alt="React-Quiz"
+              class="prj-img"
+              loading="lazy"
+            />
+            <h4>Atomic blog</h4>
+            <div class="btns-container">
+              <button class="prj-btn">Github</button>
+              <button class="prj-btn">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="contact" class="section section-contact">
+        <h2 class="center-heading">Contact Me</h2>
+        <div class="container contact-container">
+          <h3>Get in touch</h3>
+          <div class="contact-card">
+            <a href="tel:+919082084120" class="contact-link">
+              <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+              <span>9082084120</span>
+            </a>
+            <a href="mailto:rahulthilakrahul@gmail.com" class="contact-link">
+              <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+              <span>rahulthilakrahul@gmail.com</span> </a
+            ><a
+              href="https://github.com/RahulThilak"
+              class="contact-link"
+              target="_blank"
+            >
+              <ion-icon name="logo-github" class="contact-icon"></ion-icon>
+              <span>Github</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rahul-thilak"
+              class="contact-link"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin" class="contact-icon"></ion-icon>
+              <span>Linkedin</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

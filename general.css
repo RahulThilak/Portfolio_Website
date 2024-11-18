@@ -1,0 +1,153 @@
+/* ************************************ */
+/* GENERAL REUSABLE COMPONENTS */
+/* ************************************ */
+
+/* ************************************ */
+
+/* CSS VARIABLES */
+/* ************************************ */
+
+:root {
+  /* (Default) Dark Theme */
+  --home-section-bg-color: #201a2e;
+  --text-subtle: #ccc;
+  --body-background: #201a2e;
+  --body-text-color: #b0abba;
+  --primary-btn-hover-color: #423d4e;
+  --btn-white-text-color: #e5e3e8;
+  --scroll-btn-bg-color: #453663;
+  --hover-background-color: #8866cc;
+  --hover-text-color: #ffffff;
+  --section-background-color: #2d273a;
+  --card-background-color: #3c334d;
+  --download-btn: #6f4db3;
+  --card-border-color: rgba(255, 255, 255, 0.2);
+  --prj-btn-hover-bgcolor: #382956;
+  --contact-link-bgcolor: #241f2e;
+  --contact-link-hover-bgcolor: #392d53;
+  --underline-and-contact-icon: #a68cd9;
+}
+
+body.light-theme {
+  /* Light, calm theme */
+  --home-section-bg-color: #ebeff2;
+  --text-subtle: #333;
+  --hue-color: 180; /* Soft blue-green hue */
+  --body-background: #f6f8fa; /* Light grayish-blue for main background */
+  --body-text-color: #333333; /* Dark gray for better readability */
+  --primary-btn-hover-color: #d0e6f5; /* Light, muted blue for hover state */
+  --btn-white-text-color: #444444; /* Slightly darker text for good visibility */
+  --scroll-btn-bg-color: #b0cadb; /* Muted soft blue for scroll button */
+  --hover-background-color: #a5d1e6; /* Soft pastel blue for hover effects */
+  --hover-text-color: #000000; /* Black text for maximum contrast */
+  --section-background-color: #ebeff2; /* Slightly darker than body background */
+  --card-background-color: #e0e5ea; /* Light muted blue-gray for card background */
+  --download-btn: #765193; /* Calm blue for action buttons */
+  --card-border-color: rgba(0, 0, 0, 0.1); /* Subtle, light border */
+  --prj-btn-hover-bgcolor: #a0c2d8; /* Light blue for hover effects */
+  --contact-link-bgcolor: #d9e2eb; /* Very light gray-blue for link backgrounds */
+  --contact-link-hover-bgcolor: #b5d3e6; /* Slightly darker blue for hover */
+  --underline-and-contact-icon: #6095b8; /* Soft blue for accents */
+}
+
+/* RESET AND BASE STYLES */
+/* ************************************ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll Padding */
+:root {
+  /* Adjusted this value based on the  header's height */
+  --header-height: 11.2rem; /* 8rem height + 1.6rem padding on top and bottom */
+}
+
+html {
+  /* By default 1 rem = 16px */
+  /* Now to make 1 rem= 10 px */
+  /* 10px/16px = 0.625= 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  /* Only works if there is nothing absolutely positioned in relation to body*/
+  overflow-x: hidden;
+  background-color: var(--body-background);
+  color: var(--body-text-color);
+}
+
+html {
+  scroll-padding-top: var(--header-height);
+  scroll-behavior: smooth;
+}
+
+.section {
+  margin: 0 auto;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.container {
+  background-color: var(--section-background-color);
+  max-width: 90%;
+  border-radius: 2rem;
+  margin: 0 auto;
+  padding: 2.4rem 3.2rem;
+}
+
+.section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--underline-and-contact-icon);
+  margin: 0.8rem auto 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-colors) !important;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  line-height: 1.05;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  letter-spacing: -0.5px;
+}
+
+.text-md {
+  line-height: 2.4rem;
+}
